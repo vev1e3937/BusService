@@ -139,6 +139,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
+    // TODO: 1/28/2020
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnConfirm:
