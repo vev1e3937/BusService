@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CD853F"
+    tools:context=".DetailActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo3" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="390dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:text="รถบัสปรับอากาศ 30 ที่นั่ง ราคา 5000 บาท *ราคานี้ยังไม่รวมค่าน้ำมัน* "
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Booking"
+            android:background="#FFD700"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

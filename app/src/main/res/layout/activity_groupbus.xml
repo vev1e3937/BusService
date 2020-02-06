@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CD853F"
+    tools:context=".GroupbusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Img1"
+            android:layout_width="158dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"/>
+
+        <ImageButton
+            android:layout_width="158dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/logo2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:text="รถบัสพรีเมี่ยม 30 ที่นั่ง"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+             />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFF"
+            android:text="รถบัสพรีเมี่ยม 35 ที่นั่ง"
+            android:textSize="20dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="158dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"/>
+
+        <ImageButton
+            android:layout_width="158dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/logo2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:text="รถบัสพรีเมี่ยม30 ที่นั่ง"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="รถบัสพรีเมี่ยม 38 ที่นั่ง"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="158dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"/>
+
+        <ImageButton
+            android:layout_width="158dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/logo2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:text="รถบัสพรีเมี่ยม 30 ที่นั่ง"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="รถบัสพรีเมี่ยม 35 ที่นั่ง"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

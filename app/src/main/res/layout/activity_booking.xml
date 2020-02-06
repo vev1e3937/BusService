@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create a new account"
+        android:text="Booking"
         android:textColor="#FFF"
         android:textSize="30dp"
         android:layout_margin="20dp"/>
@@ -38,15 +38,15 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/place" />
 
                 <EditText
-                    android:id="@+id/EdtUsername"
+                    android:id="@+id/EdtStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="#00000000"
-                    android:hint="Username"
+                    android:hint="Start"
                     android:inputType="text"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
@@ -69,15 +69,15 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/password" />
+                    android:src="@drawable/place" />
 
                 <EditText
-                    android:id="@+id/EdtPassword"
+                    android:id="@+id/EdtDestination"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="#00000000"
-                    android:hint="Password"
+                    android:hint="Destination"
                     android:inputType="textPassword"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
@@ -100,15 +100,15 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/email" />
+                    android:src="@drawable/range" />
 
                 <EditText
-                    android:id="@+id/EdtEmail"
+                    android:id="@+id/EdtDepartureDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="#00000000"
-                    android:hint="Email"
+                    android:hint="Departure Date"
                     android:inputType="text"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
@@ -131,15 +131,15 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/range" />
 
                 <EditText
-                    android:id="@+id/EdtFirstname"
+                    android:id="@+id/EdtReturnDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="#00000000"
-                    android:hint="First Name"
+                    android:hint="Return Date"
                     android:inputType="text"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
@@ -162,15 +162,15 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/builder" />
 
                 <EditText
-                    android:id="@+id/EdtLastname"
+                    android:id="@+id/EdtStartTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="#00000000"
-                    android:hint="Last Name"
+                    android:hint="Start Time"
                     android:inputType="text"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
@@ -193,15 +193,15 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/mobile" />
+                    android:src="@drawable/builder" />
 
                 <EditText
-                    android:id="@+id/EdtTelephone"
+                    android:id="@+id/EdtEndTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:background="#00000000"
-                    android:hint="Telephone"
+                    android:hint="End Time"
                     android:inputType="number"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
@@ -223,23 +223,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
         android:layout_marginRight="25dp"
-        android:orientation="vertical">
-
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/BtnConfirm"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:padding="15dp"
             android:text="Confirm"
-            android:textColor="#fff"
             android:background="#FFD700"
+            android:textColor="#FFF"
             android:textStyle="bold" />
+
     </LinearLayout>
+
 
 </LinearLayout>

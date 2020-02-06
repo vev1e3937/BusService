@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#58949C">
+    android:background="#CD853F">
+
     <ImageView
-        android:layout_width="361dp"
-        android:layout_height="219dp"
+        android:layout_width="398dp"
+        android:layout_height="318dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/logo1" />
 
     <LinearLayout
@@ -29,7 +30,8 @@
             android:gravity="center"
             android:padding="15dp"
             android:text="Login"
-            android:textColor="#fff"
+            android:background="#FFD700"
+            android:textColor="#FFF"
             android:textStyle="bold" />
 
         <Button
@@ -40,6 +42,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="15dp"
+            android:background="#FFD700"
             android:text="Register"
             android:textColor="#fff"
             android:textStyle="bold" />

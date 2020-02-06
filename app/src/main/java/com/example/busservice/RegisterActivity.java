@@ -55,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
         LastName = (EditText) findViewById(R.id.EdtLastname);
         Telephone = (EditText) findViewById(R.id.EdtTelephone);
 
-        Confirm = (Button) findViewById(R.id.btnConfirm);
+        Confirm = (Button) findViewById(R.id.BtnConfirm);
         Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                 switch (v.getId()) {
-                    case R.id.btnConfirm:
+                    case R.id.BtnConfirm:
                         String username = Username.getText().toString();
                         String password = Password.getText().toString();
                         String email1 = Email.getText().toString();
@@ -75,30 +75,30 @@ public class RegisterActivity extends AppCompatActivity {
                         Pattern pusername = Pattern.compile("^[A-Za-z0-9 _]");
                         Pattern ppassword = Pattern.compile("^[A-Za-z0-9!@#$%^&*(())?>]");
                         Pattern ptelephone = Pattern.compile("^\\d{10}$");
-                        if (!pusername.matcher(username).find()) {
-                            Toast.makeText(getApplicationContext(), "รูปแบบid", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        if (!ppassword.matcher(password).find()) {
-                            Toast.makeText(getApplicationContext(), "รูปแบบpass", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        if (!Pattern.compile("^((\"[\\w-\\s]+\")|([\\w-]+(?:\\.[\\w-]+)*)|(\"[\\w-\\s]+\")([\\w-]+(?:\\.[\\w-]+)*))(@((?:[\\w-]+\\.)*\\w[\\w-]{0,66})\\.([a-z]{2,6}(?:\\.[a-z]{2})?)$)|(@\\[?((25[0-5]\\.|2[0-4][0-9]\\.|1[0-9]{2}\\.|[0-9]{1,2}\\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\\]?$)").matcher(email1).find()) {
-                            Toast.makeText(getApplicationContext(), "รูปแบบemail", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        if (!pusername.matcher(firstname).find()) {
-                            Toast.makeText(getApplicationContext(), "รูปแบบname", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        if (!ptelephone.matcher(lastname).find()) {
-                            Toast.makeText(getApplicationContext(), "รูปแบบlast", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        if (!ptelephone.matcher(telephone).find()) {
-                            Toast.makeText(getApplicationContext(), "รูปแบบphone", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
+//                        if (!pusername.matcher(username).find()) {
+//                            Toast.makeText(getApplicationContext(), "รูปแบบid", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        if (!ppassword.matcher(password).find()) {
+//                            Toast.makeText(getApplicationContext(), "รูปแบบpass", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        if (!Pattern.compile("^((\"[\\w-\\s]+\")|([\\w-]+(?:\\.[\\w-]+)*)|(\"[\\w-\\s]+\")([\\w-]+(?:\\.[\\w-]+)*))(@((?:[\\w-]+\\.)*\\w[\\w-]{0,66})\\.([a-z]{2,6}(?:\\.[a-z]{2})?)$)|(@\\[?((25[0-5]\\.|2[0-4][0-9]\\.|1[0-9]{2}\\.|[0-9]{1,2}\\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\\]?$)").matcher(email1).find()) {
+//                            Toast.makeText(getApplicationContext(), "รูปแบบemail", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        if (!pusername.matcher(firstname).find()) {
+//                            Toast.makeText(getApplicationContext(), "รูปแบบname", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        if (!ptelephone.matcher(lastname).find()) {
+//                            Toast.makeText(getApplicationContext(), "รูปแบบlast", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        if (!ptelephone.matcher(telephone).find()) {
+//                            Toast.makeText(getApplicationContext(), "รูปแบบphone", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
 
 
                         System.out.println("Connect database");
@@ -142,7 +142,7 @@ public class RegisterActivity extends AppCompatActivity {
     // TODO: 1/28/2020
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnConfirm:
+            case R.id.BtnConfirm:
                 String username = Username.getText().toString();
                 String password = Password.getText().toString();
                 String email = Email.getText().toString();
