@@ -14,6 +14,8 @@
         <activity android:name=".busActivity"></activity>
         <activity android:name=".BookingActivity" />
         <activity android:name=".DetailActivity" />
+        <activity android:name=".Groupbus2Activity" />
+        <activity android:name=".GroupbusActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">
