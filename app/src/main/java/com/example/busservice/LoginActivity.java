@@ -12,8 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.adedom.library.Dru;
 import com.adedom.library.ExecuteQuery;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -41,20 +43,20 @@ public class LoginActivity extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sql = "SELECT * FROM `customer` WHERE `username`='" + Userneme.getText().toString().trim() + "'AND`password`='" + Password.getText().toString().trim() + "'";
+                final String sql = "SELECT * FROM `customer` WHERE `username`='" + Userneme.getText().toString().trim() + "'AND`password`='" + Password.getText().toString().trim() + "'";
                 Dru.connection(Connect.connection())
                         .execute(sql)
                         .commit(new ExecuteQuery() {
                             @Override
                             public void onComplete(ResultSet resultSet) {
                                 try {
+                                    Connection conn = Connect.connection();
                                     if (resultSet.next()) {
                                         // TODO: 11/6/2019
                                         String id = resultSet.getString(1);
-                                        Toast.makeText(getBaseContext(), "รหัสถูกต้อง", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(getApplication(), MainActivity.class)
-                                                .putExtra("id", id)
+                                        Toast.makeText(getBaseContext(), "เข้าสู่ระบบ", Toast.LENGTH_SHORT).show();
 
+                                        startActivity(new Intent(getApplication(), busActivity.class)
                                         );
                                     } else {
                                         Toast.makeText(getBaseContext(), "รหัสไม่ถูกต้อง", Toast.LENGTH_SHORT).show();

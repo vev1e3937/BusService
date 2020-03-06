@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#CD853F"
+    android:background="#43CD80"
     android:orientation="vertical">
 
     <TextView
@@ -15,233 +15,245 @@
         android:textSize="30dp"
         android:layout_margin="20dp"/>
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingLeft="60dp"
-        android:paddingRight="60dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/place" />
-
-                <EditText
-                    android:id="@+id/EdtStart"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Start"
-                    android:inputType="text"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#fff"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#5fff"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/place" />
-
-                <EditText
-                    android:id="@+id/EdtDestination"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Destination"
-                    android:inputType="textPassword"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#fff"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#5fff"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/range" />
-
-                <EditText
-                    android:id="@+id/EdtDepartureDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Departure Date"
-                    android:inputType="text"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#fff"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#5fff"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/range" />
-
-                <EditText
-                    android:id="@+id/EdtReturnDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Return Date"
-                    android:inputType="text"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#fff"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#5fff"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/builder" />
-
-                <EditText
-                    android:id="@+id/EdtStartTime"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="Start Time"
-                    android:inputType="text"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#fff"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#5fff"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/builder" />
-
-                <EditText
-                    android:id="@+id/EdtEndTime"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00000000"
-                    android:hint="End Time"
-                    android:inputType="number"
-                    android:letterSpacing="0.1"
-                    android:textColor="#fff"
-                    android:textColorHint="#fff"
-                    android:textSize="16dp" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="#5fff"></LinearLayout>
-
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="25dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/BtnConfirm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
             android:gravity="center"
-            android:padding="15dp"
-            android:text="Confirm"
-            android:background="#FFD700"
-            android:textColor="#FFF"
-            android:textStyle="bold" />
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/place" />
+
+                    <EditText
+                        android:id="@+id/EdtStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Start"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/place" />
+
+                    <EditText
+                        android:id="@+id/EdtDestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Destination"
+                        android:inputType="textPassword"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/range" />
+
+                    <DatePicker
+                        android:id="@+id/EdtDepartureDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Departure Date"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/range" />
+
+                    <DatePicker
+                        android:id="@+id/EdtReturnDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Return Date"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/builder" />
+
+                    <TimePicker
+                        android:id="@+id/EdtStartTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Start Time"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/builder" />
+
+                    <TimePicker
+                        android:id="@+id/EdtEndTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="End Time"
+                        android:inputType="number"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#5fff"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/BtnConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Confirm"
+                        android:background="#FFD700"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
 
 
 </LinearLayout>
